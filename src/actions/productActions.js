@@ -1,6 +1,7 @@
 import { FETCH_PRODUCTS } from "../types"
 
 export const fetchProducts = () => async (dispatch) => {
+  console.log("fetch")
   const res = await fetch("/api/products")
   const data = await res.json()
   dispatch({

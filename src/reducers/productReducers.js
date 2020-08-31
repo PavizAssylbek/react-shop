@@ -1,7 +1,6 @@
 const { FETCH_PRODUCTS } = require("../types");
 
-const productReducer = (state = {}, action) => {
-
+export const productsReducer = (state = {}, action) => {
   switch (action.type) {
     case FETCH_PRODUCTS:
       return { items: action.payload }
