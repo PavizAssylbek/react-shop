@@ -15,7 +15,7 @@ class Products extends Component {
   }
 
   componentDidMount() {
-    console.log("lala", this.props);
+    this.props.fetchProducts()
     Modal.setAppElement('body');
   }
 
